@@ -1,0 +1,20 @@
+addrmap char_display {
+    regfile char_display_regs at 0x0000 {
+        reg [7:0] chars[2400] {
+            description = "Character buffer. Byte sized writes only";
+            access = write_only;
+        };
+        reg background_colour at 0x8000 {
+            field [7:0] red;
+            field [7:0] green;
+            field [7:0] blue;
+            description = "24-bit background colour. Word sized writes only.";
+        };
+        reg font_colour at 0x8004 {
+            field [7:0] red;
+            field [7:0] green;
+            field [7:0] blue;
+            description = "24-bit font colour. Word sized writes only.";
+        };
+    };
+};

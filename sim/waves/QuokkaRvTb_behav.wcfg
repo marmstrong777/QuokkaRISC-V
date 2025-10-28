@@ -1,0 +1,731 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="QuokkaRvTb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CharDisplayPkg" />
+            <top_module name="CpuPkg" />
+            <top_module name="DviPkg" />
+            <top_module name="QuokkaRvPkg" />
+            <top_module name="QuokkaRvTb" />
+            <top_module name="RiscvPkg" />
+            <top_module name="\$unit_CharDisplayPkg_sv_3683829357 " />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0 ps"></ZoomStartTime>
+      <ZoomEndTime time="15 ps"></ZoomEndTime>
+      <Cursor1Time time="1 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="204"></NameColumnWidth>
+      <ValueColumnWidth column_width="76"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject type="group" fp_name="group118">
+      <obj_property name="label">if_mem_memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group73">
+      <obj_property name="label">m_cpu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/i_clk">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/i_rst">
+         <obj_property name="ElementShortName">i_rst</obj_property>
+         <obj_property name="ObjectShortName">i_rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/i_int_timer">
+         <obj_property name="ElementShortName">i_int_timer</obj_property>
+         <obj_property name="ObjectShortName">i_int_timer</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/i_int_ext">
+         <obj_property name="ElementShortName">i_int_ext</obj_property>
+         <obj_property name="ObjectShortName">i_int_ext</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/o_leds">
+         <obj_property name="ElementShortName">o_leds[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_leds[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mstatus">
+         <obj_property name="ElementShortName">r_mstatus</obj_property>
+         <obj_property name="ObjectShortName">r_mstatus</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mie">
+         <obj_property name="ElementShortName">r_mie</obj_property>
+         <obj_property name="ObjectShortName">r_mie</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mtvec">
+         <obj_property name="ElementShortName">r_mtvec</obj_property>
+         <obj_property name="ObjectShortName">r_mtvec</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mcause">
+         <obj_property name="ElementShortName">r_mcause</obj_property>
+         <obj_property name="ObjectShortName">r_mcause</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mip">
+         <obj_property name="ElementShortName">r_mip</obj_property>
+         <obj_property name="ObjectShortName">r_mip</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mscratch">
+         <obj_property name="ElementShortName">r_mscratch[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mscratch[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mepc">
+         <obj_property name="ElementShortName">r_mepc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mepc[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_mtval">
+         <obj_property name="ElementShortName">r_mtval[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mtval[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_external_int">
+         <obj_property name="ElementShortName">w_external_int</obj_property>
+         <obj_property name="ObjectShortName">w_external_int</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_software_int">
+         <obj_property name="ElementShortName">w_software_int</obj_property>
+         <obj_property name="ObjectShortName">w_software_int</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_timer_int">
+         <obj_property name="ElementShortName">w_timer_int</obj_property>
+         <obj_property name="ObjectShortName">w_timer_int</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_csr_w_data">
+         <obj_property name="ElementShortName">w_csr_w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_csr_w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_csr_r_data">
+         <obj_property name="ElementShortName">w_csr_r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_csr_r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_trap_redirect">
+         <obj_property name="ElementShortName">r_trap_redirect</obj_property>
+         <obj_property name="ObjectShortName">r_trap_redirect</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_is_pipeline_empty">
+         <obj_property name="ElementShortName">w_is_pipeline_empty</obj_property>
+         <obj_property name="ObjectShortName">w_is_pipeline_empty</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_any_int">
+         <obj_property name="ElementShortName">w_any_int</obj_property>
+         <obj_property name="ObjectShortName">w_any_int</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_any_trap">
+         <obj_property name="ElementShortName">w_any_trap</obj_property>
+         <obj_property name="ObjectShortName">w_any_trap</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_pc">
+         <obj_property name="ElementShortName">w_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_pc[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_trap_pc">
+         <obj_property name="ElementShortName">w_trap_pc[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_trap_pc[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_pc_redirect_final">
+         <obj_property name="ElementShortName">w_pc_redirect_final</obj_property>
+         <obj_property name="ObjectShortName">w_pc_redirect_final</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_trap_cause">
+         <obj_property name="ElementShortName">w_trap_cause</obj_property>
+         <obj_property name="ObjectShortName">w_trap_cause</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_regfile_r_req">
+         <obj_property name="ElementShortName">w_regfile_r_req</obj_property>
+         <obj_property name="ObjectShortName">w_regfile_r_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_regfile_r_resp">
+         <obj_property name="ElementShortName">w_regfile_r_resp</obj_property>
+         <obj_property name="ObjectShortName">w_regfile_r_resp</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_regfile_w_req">
+         <obj_property name="ElementShortName">w_regfile_w_req</obj_property>
+         <obj_property name="ObjectShortName">w_regfile_w_req</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_fetch_flush">
+         <obj_property name="ElementShortName">w_fetch_flush</obj_property>
+         <obj_property name="ObjectShortName">w_fetch_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_decode_flush">
+         <obj_property name="ElementShortName">w_decode_flush</obj_property>
+         <obj_property name="ObjectShortName">w_decode_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_execute_flush">
+         <obj_property name="ElementShortName">w_execute_flush</obj_property>
+         <obj_property name="ObjectShortName">w_execute_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_memory_flush">
+         <obj_property name="ElementShortName">w_memory_flush</obj_property>
+         <obj_property name="ObjectShortName">w_memory_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_writeback_flush">
+         <obj_property name="ElementShortName">w_writeback_flush</obj_property>
+         <obj_property name="ObjectShortName">w_writeback_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_decode_stall">
+         <obj_property name="ElementShortName">w_decode_stall</obj_property>
+         <obj_property name="ObjectShortName">w_decode_stall</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_execute_stall">
+         <obj_property name="ElementShortName">w_execute_stall</obj_property>
+         <obj_property name="ObjectShortName">w_execute_stall</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_memory_stall">
+         <obj_property name="ElementShortName">w_memory_stall</obj_property>
+         <obj_property name="ObjectShortName">w_memory_stall</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/w_writeback_stall">
+         <obj_property name="ElementShortName">w_writeback_stall</obj_property>
+         <obj_property name="ObjectShortName">w_writeback_stall</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/r_leds">
+         <obj_property name="ElementShortName">r_leds[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_leds[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group187">
+         <obj_property name="label">if_fetch_decode</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_fetch_decode/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_fetch_decode/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_fetch_decode/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group310">
+         <obj_property name="label">if_decode_execute</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_decode_execute/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_decode_execute/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_decode_execute/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group188">
+         <obj_property name="label">if_execute_memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_execute_memory/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_execute_memory/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_execute_memory/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group89">
+         <obj_property name="label">if_memory_writeback</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_memory_writeback/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_memory_writeback/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/if_memory_writeback/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group816">
+         <obj_property name="label">m_fetch</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/i_flush">
+            <obj_property name="ElementShortName">i_flush</obj_property>
+            <obj_property name="ObjectShortName">i_flush</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/i_pc_redirect">
+            <obj_property name="ElementShortName">i_pc_redirect</obj_property>
+            <obj_property name="ObjectShortName">i_pc_redirect</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/o_pc">
+            <obj_property name="ElementShortName">o_pc[31:0]</obj_property>
+            <obj_property name="ObjectShortName">o_pc[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/r_valid">
+            <obj_property name="ElementShortName">r_valid</obj_property>
+            <obj_property name="ObjectShortName">r_valid</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/r_first_tick">
+            <obj_property name="ElementShortName">r_first_tick</obj_property>
+            <obj_property name="ObjectShortName">r_first_tick</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/w_handshake_out">
+            <obj_property name="ElementShortName">w_handshake_out</obj_property>
+            <obj_property name="ObjectShortName">w_handshake_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/r_pc">
+            <obj_property name="ElementShortName">r_pc[31:0]</obj_property>
+            <obj_property name="ObjectShortName">r_pc[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/r_inst_pc">
+            <obj_property name="ElementShortName">r_inst_pc[31:0]</obj_property>
+            <obj_property name="ObjectShortName">r_inst_pc[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/w_pc_plus_4">
+            <obj_property name="ElementShortName">w_pc_plus_4[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_pc_plus_4[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/r_inst">
+            <obj_property name="ElementShortName">r_inst[31:0]</obj_property>
+            <obj_property name="ObjectShortName">r_inst[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_fetch/w_inst_next">
+            <obj_property name="ElementShortName">w_inst_next[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_inst_next[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group138">
+         <obj_property name="label">m_execute</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/i_flush">
+            <obj_property name="ElementShortName">i_flush</obj_property>
+            <obj_property name="ObjectShortName">i_flush</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/i_stall">
+            <obj_property name="ElementShortName">i_stall</obj_property>
+            <obj_property name="ObjectShortName">i_stall</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/i_mepc">
+            <obj_property name="ElementShortName">i_mepc[31:0]</obj_property>
+            <obj_property name="ObjectShortName">i_mepc[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/w_alu_arg_1">
+            <obj_property name="ElementShortName">w_alu_arg_1[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_alu_arg_1[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/w_alu_arg_2">
+            <obj_property name="ElementShortName">w_alu_arg_2[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_alu_arg_2[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/w_alu_result">
+            <obj_property name="ElementShortName">w_alu_result[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_alu_result[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/r_inst_packet_valid">
+            <obj_property name="ElementShortName">r_inst_packet_valid</obj_property>
+            <obj_property name="ObjectShortName">r_inst_packet_valid</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/w_handshake_in">
+            <obj_property name="ElementShortName">w_handshake_in</obj_property>
+            <obj_property name="ObjectShortName">w_handshake_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/w_handshake_out">
+            <obj_property name="ElementShortName">w_handshake_out</obj_property>
+            <obj_property name="ObjectShortName">w_handshake_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/r_inst_packet">
+            <obj_property name="ElementShortName">r_inst_packet</obj_property>
+            <obj_property name="ObjectShortName">r_inst_packet</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_execute/w_inst_packet_next">
+            <obj_property name="ElementShortName">w_inst_packet_next</obj_property>
+            <obj_property name="ObjectShortName">w_inst_packet_next</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group5537">
+         <obj_property name="label">m_memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/i_flush">
+            <obj_property name="ElementShortName">i_flush</obj_property>
+            <obj_property name="ObjectShortName">i_flush</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/i_stall">
+            <obj_property name="ElementShortName">i_stall</obj_property>
+            <obj_property name="ObjectShortName">i_stall</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/i_csr_r_data">
+            <obj_property name="ElementShortName">i_csr_r_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">i_csr_r_data[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/r_inst_packet_valid">
+            <obj_property name="ElementShortName">r_inst_packet_valid</obj_property>
+            <obj_property name="ObjectShortName">r_inst_packet_valid</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/w_handshake_in">
+            <obj_property name="ElementShortName">w_handshake_in</obj_property>
+            <obj_property name="ObjectShortName">w_handshake_in</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/w_handshake_out">
+            <obj_property name="ElementShortName">w_handshake_out</obj_property>
+            <obj_property name="ObjectShortName">w_handshake_out</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/r_inst_packet">
+            <obj_property name="ElementShortName">r_inst_packet</obj_property>
+            <obj_property name="ObjectShortName">r_inst_packet</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/w_inst_packet_next">
+            <obj_property name="ElementShortName">w_inst_packet_next</obj_property>
+            <obj_property name="ObjectShortName">w_inst_packet_next</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu/m_memory/w_inst_packet_merge">
+            <obj_property name="ElementShortName">w_inst_packet_merge</obj_property>
+            <obj_property name="ObjectShortName">w_inst_packet_merge</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group146">
+         <obj_property name="label">m_writeback</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group153">
+      <obj_property name="label">m_memory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group128">
+      <obj_property name="label">m_char_display</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_char_display/i_clk_bus">
+         <obj_property name="ElementShortName">i_clk_bus</obj_property>
+         <obj_property name="ObjectShortName">i_clk_bus</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_char_display/i_clk_dvi">
+         <obj_property name="ElementShortName">i_clk_dvi</obj_property>
+         <obj_property name="ObjectShortName">i_clk_dvi</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_char_display/i_clk_dvi_mul5">
+         <obj_property name="ElementShortName">i_clk_dvi_mul5</obj_property>
+         <obj_property name="ObjectShortName">i_clk_dvi_mul5</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_char_display/i_rst_bus">
+         <obj_property name="ElementShortName">i_rst_bus</obj_property>
+         <obj_property name="ObjectShortName">i_rst_bus</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_char_display/i_rst_dvi">
+         <obj_property name="ElementShortName">i_rst_dvi</obj_property>
+         <obj_property name="ObjectShortName">i_rst_dvi</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/o_dvi">
+         <obj_property name="ElementShortName">o_dvi</obj_property>
+         <obj_property name="ObjectShortName">o_dvi</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_char_mem">
+         <obj_property name="ElementShortName">r_char_mem[2399:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_char_mem[2399:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_w_addr">
+         <obj_property name="ElementShortName">w_char_w_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_w_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_w_addr_safe">
+         <obj_property name="ElementShortName">w_char_w_addr_safe[11:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_w_addr_safe[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_video_timings_s0">
+         <obj_property name="ElementShortName">w_video_timings_s0</obj_property>
+         <obj_property name="ObjectShortName">w_video_timings_s0</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_row">
+         <obj_property name="ElementShortName">w_char_row[4:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_row[4:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_column">
+         <obj_property name="ElementShortName">w_char_column[6:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_column[6:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_addr">
+         <obj_property name="ElementShortName">w_char_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_addr_safe">
+         <obj_property name="ElementShortName">w_char_addr_safe[11:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_addr_safe[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_char">
+         <obj_property name="ElementShortName">r_char[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_char[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_char_next">
+         <obj_property name="ElementShortName">w_char_next[7:0]</obj_property>
+         <obj_property name="ObjectShortName">w_char_next[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_video_timings_s1">
+         <obj_property name="ElementShortName">r_video_timings_s1</obj_property>
+         <obj_property name="ObjectShortName">r_video_timings_s1</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_font_mem">
+         <obj_property name="ElementShortName">r_font_mem[4095:0][7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_font_mem[4095:0][7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_font_addr">
+         <obj_property name="ElementShortName">w_font_addr[11:0]</obj_property>
+         <obj_property name="ObjectShortName">w_font_addr[11:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_font_bitmap_row">
+         <obj_property name="ElementShortName">r_font_bitmap_row[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_font_bitmap_row[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_font_bitmap_row_next">
+         <obj_property name="ElementShortName">w_font_bitmap_row_next[7:0]</obj_property>
+         <obj_property name="ObjectShortName">w_font_bitmap_row_next[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_video_timings_s2">
+         <obj_property name="ElementShortName">r_video_timings_s2</obj_property>
+         <obj_property name="ObjectShortName">r_video_timings_s2</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_font_y">
+         <obj_property name="ElementShortName">w_font_y[3:0]</obj_property>
+         <obj_property name="ObjectShortName">w_font_y[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_font_x">
+         <obj_property name="ElementShortName">r_font_x[2:0]</obj_property>
+         <obj_property name="ObjectShortName">r_font_x[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_font_x_next">
+         <obj_property name="ElementShortName">w_font_x_next[2:0]</obj_property>
+         <obj_property name="ObjectShortName">w_font_x_next[2:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_rgb">
+         <obj_property name="ElementShortName">w_rgb</obj_property>
+         <obj_property name="ObjectShortName">w_rgb</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_background_colour">
+         <obj_property name="ElementShortName">r_background_colour</obj_property>
+         <obj_property name="ObjectShortName">r_background_colour</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_font_colour">
+         <obj_property name="ElementShortName">r_font_colour</obj_property>
+         <obj_property name="ObjectShortName">r_font_colour</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_char_display/r_font_bitmap_row_rev">
+         <obj_property name="ElementShortName">r_font_bitmap_row_rev[7:0]</obj_property>
+         <obj_property name="ObjectShortName">r_font_bitmap_row_rev[7:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_char_display/w_font_bitmap_bit">
+         <obj_property name="ElementShortName">w_font_bitmap_bit</obj_property>
+         <obj_property name="ObjectShortName">w_font_bitmap_bit</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group110">
+      <obj_property name="label">if_mem_data</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group2532">
+      <obj_property name="label">if_mem_char_display</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/w_en">
+         <obj_property name="ElementShortName">w_en</obj_property>
+         <obj_property name="ObjectShortName">w_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/ready">
+         <obj_property name="ElementShortName">ready</obj_property>
+         <obj_property name="ObjectShortName">ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/addr">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/r_data">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/w_data">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_char_display/w_size">
+         <obj_property name="ElementShortName">w_size[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_size[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group275">
+      <obj_property name="label">m_cpu_timer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/i_clk">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/i_rst">
+         <obj_property name="ElementShortName">i_rst</obj_property>
+         <obj_property name="ObjectShortName">i_rst</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/o_int">
+         <obj_property name="ElementShortName">o_int</obj_property>
+         <obj_property name="ObjectShortName">o_int</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/o_time">
+         <obj_property name="ElementShortName">o_time[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_time[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/o_timeh">
+         <obj_property name="ElementShortName">o_timeh[31:0]</obj_property>
+         <obj_property name="ObjectShortName">o_timeh[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/r_int">
+         <obj_property name="ElementShortName">r_int</obj_property>
+         <obj_property name="ObjectShortName">r_int</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/w_w_mtime">
+         <obj_property name="ElementShortName">w_w_mtime</obj_property>
+         <obj_property name="ObjectShortName">w_w_mtime</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/r_mtime">
+         <obj_property name="ElementShortName">r_mtime[63:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mtime[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/r_mtimecmp">
+         <obj_property name="ElementShortName">r_mtimecmp[63:0]</obj_property>
+         <obj_property name="ObjectShortName">r_mtimecmp[63:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/r_read">
+         <obj_property name="ElementShortName">r_read[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_read[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_cpu_timer/w_reg_sel">
+         <obj_property name="ElementShortName">w_reg_sel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_reg_sel[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group537">
+      <obj_property name="label">if_mem_cpu_timer</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/w_en">
+         <obj_property name="ElementShortName">w_en</obj_property>
+         <obj_property name="ObjectShortName">w_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/ready">
+         <obj_property name="ElementShortName">ready</obj_property>
+         <obj_property name="ObjectShortName">ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/addr">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/r_data">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/w_data">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_cpu_timer/w_size">
+         <obj_property name="ElementShortName">w_size[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_size[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="group" fp_name="group457">
+      <obj_property name="label">m_int_ctl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/i_int">
+         <obj_property name="ElementShortName">i_int[0:0]</obj_property>
+         <obj_property name="ObjectShortName">i_int[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/o_int">
+         <obj_property name="ElementShortName">o_int</obj_property>
+         <obj_property name="ObjectShortName">o_int</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/r_en">
+         <obj_property name="ElementShortName">r_en[0:0]</obj_property>
+         <obj_property name="ObjectShortName">r_en[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/r_pending">
+         <obj_property name="ElementShortName">r_pending[0:0]</obj_property>
+         <obj_property name="ObjectShortName">r_pending[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/w_pending_next">
+         <obj_property name="ElementShortName">w_pending_next[0:0]</obj_property>
+         <obj_property name="ObjectShortName">w_pending_next[0:0]</obj_property>
+      </wvobject>
+      <wvobject type="other" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/w_int_ctl_addr">
+         <obj_property name="ElementShortName">w_int_ctl_addr</obj_property>
+         <obj_property name="ObjectShortName">w_int_ctl_addr</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/m_int_ctl/r_data">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/r_int_ctl_test">
+      <obj_property name="ElementShortName">r_int_ctl_test[23:0]</obj_property>
+      <obj_property name="ObjectShortName">r_int_ctl_test[23:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/w_int_ctl_test_int">
+      <obj_property name="ElementShortName">w_int_ctl_test_int</obj_property>
+      <obj_property name="ObjectShortName">w_int_ctl_test_int</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group462">
+      <obj_property name="label">if_mem_int_ctl</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/valid">
+         <obj_property name="ElementShortName">valid</obj_property>
+         <obj_property name="ObjectShortName">valid</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/w_en">
+         <obj_property name="ElementShortName">w_en</obj_property>
+         <obj_property name="ObjectShortName">w_en</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/ready">
+         <obj_property name="ElementShortName">ready</obj_property>
+         <obj_property name="ObjectShortName">ready</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/addr">
+         <obj_property name="ElementShortName">addr[31:0]</obj_property>
+         <obj_property name="ObjectShortName">addr[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/r_data">
+         <obj_property name="ElementShortName">r_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">r_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/w_data">
+         <obj_property name="ElementShortName">w_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">w_data[31:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/QuokkaRvTb/m_quokka/if_mem_int_ctl/w_size">
+         <obj_property name="ElementShortName">w_size[1:0]</obj_property>
+         <obj_property name="ObjectShortName">w_size[1:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CpuTb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CpuPkg" />
+            <top_module name="CpuTb" />
+            <top_module name="QuokkaRvPkg" />
+            <top_module name="RiscvPkg" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="41 ps"></ZoomStartTime>
+      <ZoomEndTime time="67 ps"></ZoomEndTime>
+      <Cursor1Time time="53 ps"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="258"></NameColumnWidth>
+      <ValueColumnWidth column_width="133"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="4" />
+   <wvobject type="logic" fp_name="/CpuTb/r_clk">
+      <obj_property name="ElementShortName">r_clk</obj_property>
+      <obj_property name="ObjectShortName">r_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/CpuTb/r_rst">
+      <obj_property name="ElementShortName">r_rst</obj_property>
+      <obj_property name="ObjectShortName">r_rst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/CpuTb/w_leds">
+      <obj_property name="ElementShortName">w_leds[3:0]</obj_property>
+      <obj_property name="ObjectShortName">w_leds[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="group" fp_name="group25">
+      <obj_property name="label">m_cpu</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/i_clk">
+         <obj_property name="ElementShortName">i_clk</obj_property>
+         <obj_property name="ObjectShortName">i_clk</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/i_rst">
+         <obj_property name="ElementShortName">i_rst</obj_property>
+         <obj_property name="ObjectShortName">i_rst</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/CpuTb/m_cpu/o_leds">
+         <obj_property name="ElementShortName">o_leds[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_leds[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/CpuTb/m_cpu/w_regfile_r_req">
+         <obj_property name="ElementShortName">w_regfile_r_req</obj_property>
+         <obj_property name="ObjectShortName">w_regfile_r_req</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/CpuTb/m_cpu/w_regfile_r_resp">
+         <obj_property name="ElementShortName">w_regfile_r_resp</obj_property>
+         <obj_property name="ObjectShortName">w_regfile_r_resp</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/CpuTb/m_cpu/w_regfile_w_req">
+         <obj_property name="ElementShortName">w_regfile_w_req</obj_property>
+         <obj_property name="ObjectShortName">w_regfile_w_req</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/w_fetch_flush">
+         <obj_property name="ElementShortName">w_fetch_flush</obj_property>
+         <obj_property name="ObjectShortName">w_fetch_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/w_decode_flush">
+         <obj_property name="ElementShortName">w_decode_flush</obj_property>
+         <obj_property name="ObjectShortName">w_decode_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/w_execute_flush">
+         <obj_property name="ElementShortName">w_execute_flush</obj_property>
+         <obj_property name="ObjectShortName">w_execute_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/w_memory_flush">
+         <obj_property name="ElementShortName">w_memory_flush</obj_property>
+         <obj_property name="ObjectShortName">w_memory_flush</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/w_writeback_flush">
+         <obj_property name="ElementShortName">w_writeback_flush</obj_property>
+         <obj_property name="ObjectShortName">w_writeback_flush</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/CpuTb/m_cpu/w_execute_pc_redirect">
+         <obj_property name="ElementShortName">w_execute_pc_redirect</obj_property>
+         <obj_property name="ObjectShortName">w_execute_pc_redirect</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/w_decode_stall">
+         <obj_property name="ElementShortName">w_decode_stall</obj_property>
+         <obj_property name="ObjectShortName">w_decode_stall</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/hazard_regfile_raw_1">
+         <obj_property name="ElementShortName">hazard_regfile_raw_1</obj_property>
+         <obj_property name="ObjectShortName">hazard_regfile_raw_1</obj_property>
+      </wvobject>
+      <wvobject type="logic" fp_name="/CpuTb/m_cpu/hazard_regfile_raw_2">
+         <obj_property name="ElementShortName">hazard_regfile_raw_2</obj_property>
+         <obj_property name="ObjectShortName">hazard_regfile_raw_2</obj_property>
+      </wvobject>
+      <wvobject type="array" fp_name="/CpuTb/m_cpu/r_leds">
+         <obj_property name="ElementShortName">r_leds[3:0]</obj_property>
+         <obj_property name="ObjectShortName">r_leds[3:0]</obj_property>
+      </wvobject>
+      <wvobject type="group" fp_name="group26">
+         <obj_property name="label">if_fetch_decode</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_fetch_decode/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_fetch_decode/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/if_fetch_decode/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group30">
+         <obj_property name="label">if_decode_execute</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_decode_execute/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_decode_execute/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/if_decode_execute/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group35">
+         <obj_property name="label">if_execute_memory</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_execute_memory/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_execute_memory/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/if_execute_memory/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group39">
+         <obj_property name="label">if_memory_writeback</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_memory_writeback/ready">
+            <obj_property name="ElementShortName">ready</obj_property>
+            <obj_property name="ObjectShortName">ready</obj_property>
+         </wvobject>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/if_memory_writeback/valid">
+            <obj_property name="ElementShortName">valid</obj_property>
+            <obj_property name="ObjectShortName">valid</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet">
+            <obj_property name="ElementShortName">inst_packet</obj_property>
+            <obj_property name="ObjectShortName">inst_packet</obj_property>
+            <obj_property name="isExpanded"></obj_property>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.pc">
+               <obj_property name="ElementShortName">.pc[31:0]</obj_property>
+               <obj_property name="ObjectShortName">.pc[31:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.imm">
+               <obj_property name="ElementShortName">.imm[31:0]</obj_property>
+               <obj_property name="ObjectShortName">.imm[31:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.alu_result">
+               <obj_property name="ElementShortName">.alu_result[31:0]</obj_property>
+               <obj_property name="ObjectShortName">.alu_result[31:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.data_mem_r_data">
+               <obj_property name="ElementShortName">.data_mem_r_data[31:0]</obj_property>
+               <obj_property name="ObjectShortName">.data_mem_r_data[31:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.branch_target_pc">
+               <obj_property name="ElementShortName">.branch_target_pc[31:0]</obj_property>
+               <obj_property name="ObjectShortName">.branch_target_pc[31:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.inst">
+               <obj_property name="ElementShortName">.inst[31:0]</obj_property>
+               <obj_property name="ObjectShortName">.inst[31:0]</obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.uop">
+               <obj_property name="ElementShortName">.uop</obj_property>
+               <obj_property name="ObjectShortName">.uop</obj_property>
+               <obj_property name="isExpanded"></obj_property>
+            </wvobject>
+            <wvobject type="array" fp_name="/CpuTb/m_cpu/if_memory_writeback/inst_packet.regfile_r_resp">
+               <obj_property name="ElementShortName">.regfile_r_resp</obj_property>
+               <obj_property name="ObjectShortName">.regfile_r_resp</obj_property>
+            </wvobject>
+         </wvobject>
+      </wvobject>
+      <wvobject type="group" fp_name="group56">
+         <obj_property name="label">m_writeback</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="isExpanded"></obj_property>
+         <wvobject type="logic" fp_name="/CpuTb/m_cpu/m_writeback/i_flush">
+            <obj_property name="ElementShortName">i_flush</obj_property>
+            <obj_property name="ObjectShortName">i_flush</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/m_writeback/o_regfile_w_req">
+            <obj_property name="ElementShortName">o_regfile_w_req</obj_property>
+            <obj_property name="ObjectShortName">o_regfile_w_req</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/m_writeback/w_data_mem_r_data_done">
+            <obj_property name="ElementShortName">w_data_mem_r_data_done[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_data_mem_r_data_done[31:0]</obj_property>
+         </wvobject>
+         <wvobject type="array" fp_name="/CpuTb/m_cpu/m_writeback/w_regfile_w_data">
+            <obj_property name="ElementShortName">w_regfile_w_data[31:0]</obj_property>
+            <obj_property name="ObjectShortName">w_regfile_w_data[31:0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+</wave_config>
