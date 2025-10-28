@@ -1,6 +1,5 @@
 import QuokkaRvPkg::*;
 
-
 // REFACTOR Make word size parameterizable?
 module Memory (
     input logic  i_clk, i_rst,

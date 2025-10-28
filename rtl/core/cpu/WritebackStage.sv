@@ -11,6 +11,7 @@ module WritebackStage (
     // REFACTOR Rename.
     word_t w_data_mem_r_data_done;
 
+    // REFACTOR Instead of duplicating these case blocks for both signed and unsigned, use a variable for the extension.
     // TODO Memory exceptions e.g. misalignment, bus error.
     // Memory and peripherals just return the whole word, alignment and sign extension happens here.
     always_comb begin
