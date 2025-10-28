@@ -9,6 +9,8 @@ A simple RISC-V softcore SoC targeting the Xilinx Zynq-7000 FPGA family.
 - UART controller
 - Interrupt controller with support for up to 32 sources
 
+![alt text](./quokkarv.drawio.svg)
+
 ## CPU Microarchitecture
 - 5 stage pipeline
 - 3 clock cycle branch penalty
