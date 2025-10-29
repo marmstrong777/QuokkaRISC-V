@@ -28,7 +28,7 @@ if ! riscv32-unknown-elf-objcopy -j .srodata -j .sdata -j .sbss -j .rodata -j .d
 	echo "ERROR: Objcopy error"
 fi
 
-REFACTOR Objcopy might have a flag to directly output as hex.
+# REFACTOR Objcopy might have a flag to directly output as hex.
 # TODO This function is horribly optimized and takes far too long.
 convert_bin_to_hex() {
     local BINFILE="$1"

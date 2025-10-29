@@ -22,7 +22,6 @@ module FetchStage (
     localparam MEM_SIZE_WORDS = 2048;
 
     logic[7:0] sim_mem[(MEM_SIZE_WORDS * 4) - 1:0];
-
     
     initial begin
         $readmemh("inst_mem.mem", sim_mem);

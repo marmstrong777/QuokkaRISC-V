@@ -23,6 +23,8 @@ module Memory (
         if_mem.r_data = r_read;
 
         w_addr_word_unsafe = { 2'b0, if_mem.addr[$size( if_mem.addr ) - 1:2] };
+        // FIXME This set address to zero behavior if outside bounds could result in some very cryptic bugs, 
+        // should disallow writes in this case.
         w_addr_word = w_addr_word_unsafe < $size( r_mem ) ? w_addr_word_unsafe : '0; 
     end
 

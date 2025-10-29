@@ -4,7 +4,6 @@ package RiscvPkg;
 
     // ========== Instruction encodings.
 
-    // REFACTOR Remove redundant _TYPE from enum names and values.
     typedef enum logic [6:0] { 
         OPCODE_TYPE_LUI       = 7'b0110111,
         OPCODE_TYPE_AUIPC     = 7'b0010111,
@@ -19,6 +18,7 @@ package RiscvPkg;
         OPCODE_TYPE_SYSTEM    = 7'b1110011
     } opcode_type_e;
 
+    // REFACTOR Remove redundant _TYPE from below enum names and values.
     typedef enum logic [2:0] {
         FUNCT3_TYPE_BRANCH_BEQ  = 3'b000,
         FUNCT3_TYPE_BRANCH_BNE  = 3'b001,

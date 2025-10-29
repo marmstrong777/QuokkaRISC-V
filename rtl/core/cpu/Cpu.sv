@@ -223,6 +223,7 @@ module Cpu (
             // instruction may raise an exception. In addition, we want to wait for any flight branches to resolve as
             // we don't want to store a mispredicted pc in mepc. By clearing mstatus.mie w_any_trap is deasserted thus
             // allowing the fetch stage to dispatch instructions from the new pc.
+            // REFACTOR Merge this condition into a signal (w_trap_dispatch).
             if ( w_any_trap && w_is_pipeline_empty ) begin
                 r_trap_redirect <= '{
                     valid     : '1,
