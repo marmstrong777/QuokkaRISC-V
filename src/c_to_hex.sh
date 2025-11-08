@@ -7,7 +7,8 @@ fi
 
 OBJFILE=$(mktemp)
 
-if ! riscv32-unknown-elf-gcc -march=rv32i_zicsr -mabi=ilp32 -Og -g -nostartfiles -nodefaultlibs -nolibc -nostdlib -ffreestanding -Wall -T "link.ld" "_start.s" "quokka_rv.h" "quokka_rv.c" "$1" -o "$OBJFILE"; then
+# REFACTOR Manually referencing every input file, not great practice.
+if ! riscv32-unknown-elf-gcc -march=rv32i_zicsr -mabi=ilp32 -Og -g -nostartfiles -nodefaultlibs -nolibc -nostdlib -ffreestanding -Wall -T "link.ld" "_start.s" "riscv.h" "riscv.c" "quokka_rv.h" "quokka_rv.c" "systemrdl/quokka_rv_regs.h" "$1" -o "$OBJFILE"; then
 	echo "ERROR: Compiler error"
 	exit 1
 fi

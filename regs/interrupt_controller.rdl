@@ -1,0 +1,31 @@
+addrmap interrupt_controller {
+    field f_enable {
+        sw = rw;
+        hw = r;
+        reset = 0;
+        fieldwidth = 32;
+    };
+    
+    reg r_enable {
+        f_enable enable;
+        regwidth = 32;
+    };
+
+    field f_pending {
+        sw = rw;
+        hw = r;
+        woclr;
+        reset = 0;
+        fieldwidth = 32;
+    };
+
+    reg r_pending {
+        f_pending pending;
+        regwidth = 32;
+    };
+
+    name = "Interrupt Controller";
+    desc = "External interrupt line asserted when |(enable & pending).";
+    r_enable enable @ 0x0;
+    r_pending pending @ 0x4;
+};

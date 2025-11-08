@@ -1,20 +1,33 @@
 addrmap char_display {
-    regfile char_display_regs at 0x0000 {
-        reg [7:0] chars[2400] {
-            description = "Character buffer. Byte sized writes only";
-            access = write_only;
-        };
-        reg background_colour at 0x8000 {
-            field [7:0] red;
-            field [7:0] green;
-            field [7:0] blue;
-            description = "24-bit background colour. Word sized writes only.";
-        };
-        reg font_colour at 0x8004 {
-            field [7:0] red;
-            field [7:0] green;
-            field [7:0] blue;
-            description = "24-bit font colour. Word sized writes only.";
-        };
+    // FIXME Fix rtl; not readable from software.
+    field f_colour_component {
+        sw = rw;
+        hw = r;
+        fieldwidth = 8;
     };
+
+    reg r_colour {
+        f_colour_component red;
+        f_colour_component green;
+        f_colour_component blue;
+        regwidth = 32;
+    };
+
+    // FIXME Fix rtl; not readable from software.
+    field f_char {
+        sw = rw;
+        hw = r;
+        fieldwidth = 8;
+    };
+
+    reg r_char_mem {
+        desc = "Maps to displayed characters row-wise.";
+        regwidth = 8;
+        f_char char;
+    };
+
+    name = "Character Mode Display";
+    r_char_mem char_mem[2400] @0x0000;
+    r_colour font_colour @0x8000;
+    r_colour background_colour @0x8004;
 };

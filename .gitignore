@@ -1,5 +1,7 @@
 build/
+venv/
 .Xil/
+.vscode
 vivado*.jou
 vivado*.log
 vivado*.str

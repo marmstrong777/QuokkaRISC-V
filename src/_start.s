@@ -2,13 +2,13 @@
     .globl _start
     .align 2
 _start:
-    // Setup stack pointer.
+    # Setup stack pointer.
     la      sp, _stack_top
 
 # REFACTOR Faster bss/sbss clearing using sw, need to be mindful of alignment issues however as length may not be
 # integer multiple of word size.
 
-// Zero bss.
+# Zero bss.
     la      t0, _sbss       
     la      t1, _ebss
 bss_loop:
@@ -18,7 +18,7 @@ bss_loop:
     j       bss_loop
 bss_done:
 
-// Zero sbss.
+# Zero sbss.
     la      t0, _ssbss
     la      t1, _esbss
 sbss_loop:

@@ -1,0 +1,13 @@
+`include "data_mem.rdl"
+`include "char_display.rdl"
+`include "riscv_timer.rdl"
+`include "interrupt_controller.rdl"
+
+addrmap quokka_rv {
+    name = "Quokka RISC-V";
+    desc = "Top level memory map.";
+    external m_data_mem data_mem @ 0x10000000;
+    char_display char_display @ 0x80000000;
+    riscv_timer riscv_timer @ 0x90000000;
+    interrupt_controller interrupt_controller @ 0xA0000000;
+};

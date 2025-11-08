@@ -1,0 +1,31 @@
+// TODO Document reset?
+addrmap riscv_timer {
+    field f_timer {
+        sw = rw;
+        hw = rw;
+        fieldwidth = 32;
+    };
+
+    reg r_timer {
+        f_timer timer;
+        regwidth = 32;
+    };
+
+    field f_timer_cmp {
+        sw = rw;
+        hw = r;
+        fieldwidth = 32;
+    };
+
+    reg r_timer_cmp {
+        f_timer_cmp timer_cmp;
+        regwidth = 32;
+    };
+
+    name = "RISC-V Timer";
+    desc = "Timer from the RISC-V privileged specification.";
+    r_timer mtime @ 0x0;
+    r_timer mtimeh @ 0x4;
+    r_timer_cmp mtimecmp @ 0x8;
+    r_timer_cmp mtimecmph @ 0xC;
+};

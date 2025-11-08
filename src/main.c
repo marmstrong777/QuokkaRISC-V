@@ -1,6 +1,7 @@
 #include <stdint.h>
 #include <stddef.h>
 
+#include "riscv.h"
 #include "quokka_rv.h"
 
 // Display a banner that bounces across the screen.
@@ -64,7 +65,7 @@ void TimerInterruptHandler()
    bg_green = bg_red;
    bg_blue = bg_red;
 
-   CharDisplaySetBackgroundColour((volatile char *)CHAR_DISPLAY_BASE, bg_red, bg_green, bg_blue);
+   CharDisplaySetBackgroundColour(bg_red, bg_green, bg_blue);
 
    if (bg_red > 50)
    {
@@ -88,17 +89,13 @@ __attribute__((interrupt)) void TrapHandler()
 
 int main()
 {
-   void (*trap_handler_addr)(void) = &TrapHandler;
-   // REFACTOR Define a function.
-   asm volatile("csrw mtvec, %0" ::"r"(trap_handler_addr));
+   SetMtvec(&TrapHandler);
 
    CpuTimerSetMtime(0);
    CpuTimerSetMtimecmp(TIMER_PERIOD);
 
    EnableTimerInterrupts();
    EnableGlobalInterrupts();
-
-   volatile char *display_base = (volatile char *)CHAR_DISPLAY_BASE;
 
    uint8_t red, green, blue;
    uint8_t colour_pos = 0;
@@ -111,11 +108,11 @@ int main()
 
    while (1)
    {
-      CharDisplayClear(display_base, ' ');
+      CharDisplayClear(' ');
 
       for (uint32_t i = 0; i < BANNER_HEIGHT; i++)
       {
-         CharDisplayWriteString(display_base, banner[i], x_offset, y_offset + i);
+         CharDisplayWriteString(banner[i], x_offset, y_offset + i);
       }
 
       x_offset += x_vel;
@@ -142,7 +139,7 @@ int main()
       for (uint32_t i = 0; i < 8; i++)
       {
          ColourWheel(colour_pos, &red, &green, &blue);
-         CharDisplaySetFontColour(display_base, red, green, blue);
+         CharDisplaySetFontColour(red, green, blue);
          colour_pos++;
 
          BusyWait(60000);

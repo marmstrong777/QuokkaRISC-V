@@ -21,6 +21,7 @@ interface mem_if #(parameter ADDR_WIDTH = 32, DATA_WIDTH = 32) ();
 endinterface
 
 
+// TODO High fanout / large net on the core reset limiting fmax, add pipeline registers.
 module QuokkaRv (
     input  logic       i_clk_core, i_clk_dvi, i_clk_dvi_mul5, i_rst_core, i_rst_dvi,
     output logic [3:0] o_leds,
@@ -104,7 +105,7 @@ module QuokkaRv (
         4'b1000: begin
             if_mem_data.r_data = if_mem_char_display.r_data; 
         end
-        // Cpu timer: 0x90000000 -> 0x9FFFFFFF
+        // RISC-V timer: 0x90000000 -> 0x9FFFFFFF
         4'b1001: begin
             if_mem_data.r_data = if_mem_cpu_timer.r_data;
         end

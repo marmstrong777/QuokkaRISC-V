@@ -11,6 +11,8 @@ A simple RISC-V softcore SoC targeting the Xilinx Zynq-7000 FPGA family.
 
 ![alt text](./quokkarv.drawio.svg)
 
+## [Memory Map](docs/systemrdl/index.html)
+
 ## CPU Microarchitecture
 - 5 stage pipeline
 - 3 clock cycle branch penalty

@@ -60,6 +60,7 @@ typedef struct packed {
 
 // TODO Implement Zicntr. Note that instructions that result in exceptions (even ebreak, ecall) do not retire/increment instret.
 // REFACTOR Interfaces in module instantiation ports should have the modport suffix.
+// TODO Remove leds.
 module Cpu (
     input  logic        i_clk, i_rst, i_int_timer, i_int_ext,
     output logic  [3:0] o_leds,

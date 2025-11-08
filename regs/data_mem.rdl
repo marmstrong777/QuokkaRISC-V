@@ -1,0 +1,6 @@
+mem m_data_mem {
+    name = "Data Memory";
+    mementries = 16384;
+    memwidth = 32;
+    sw = rw;
+};
