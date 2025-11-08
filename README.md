@@ -11,7 +11,7 @@ A simple RISC-V softcore SoC targeting the Xilinx Zynq-7000 FPGA family.
 
 ![alt text](./quokkarv.drawio.svg)
 
-## [Memory Map](docs/systemrdl/index.html)
+## [Memory Map](https://marmstrong777.github.io/QuokkaRISC-V/systemrdl/index.html)
 
 ## CPU Microarchitecture
 - 5 stage pipeline
